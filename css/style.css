@@ -1,0 +1,311 @@
+/* ^reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ~general */
+:root {
+  --primary: #f1c40f;
+  --secondary: #333;
+  --third: red;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #eee;
+  color: var(--secondary);
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin-bottom: 0.8rem;
+
+}
+
+strong {
+  font-weight: 400px;
+  color: var(--primary);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.vp-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: block;
+  margin: auto;
+  max-width: 1200px;
+}
+
+/* header */
+header {
+  padding: 1rem 2rem;
+  background: var(--secondary);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  line-height: 1.8rem;
+}
+
+header a {
+  color: white;
+}
+
+.vp-logo {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+  font-family: "Long Cang", system-ui;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+header ul {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+}
+
+header ul li {
+  padding: 1rem;
+}
+
+header ul li a:hover {
+  color: var(--primary);
+}
+
+.vp-logo i {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+/* vp */
+
+.vp {
+  flex: auto;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/frame.jpg) center center/cover ;
+}
+
+.vp-content {
+  max-width: 800px;
+  text-align: center;
+  color: white;
+}
+
+.vp-content p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+
+.vp-content h1 {
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+
+}
+
+/* ^offer */
+.offer {
+  padding: 10rem 1rem;
+}
+
+.offer-list {
+  display: flex;
+  flex: row nowrap;
+  list-style: none;
+  justify-content: space-between;
+
+}
+
+.offer-elem {
+  margin: 1rem;
+  background: white;
+  border: 1px solid #ddd;
+  flex: 1;
+}
+
+.offer-elem-img {
+  width: 100%;
+}
+
+.offer-elem-text {
+  padding: 2rem;
+  text-align: center;
+}
+
+.offer-seperator {
+  width: 50px;
+  height: 2px;
+  background: var(--secondary);
+  margin: 1rem auto;
+
+}
+
+.title {
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
+.who {
+  display: flex;
+  flex-flow: row nowrap;
+  min-height: 600px;
+}
+
+.who-content-img {
+  flex: 1;
+  background: url(../img/team.jpg) center center/cover;
+}
+
+
+
+.who-content-text {
+  display: flex;
+  flex: 1;
+  color: white;
+  padding: 4rem;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.who-content-text p {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+.who-content-text h2 {
+  margin-bottom: 2rem;
+}
+
+.bg-dark {
+  background: var(--secondary);
+  color: white;
+}
+
+.testimonials {
+  padding: 5rem 1rem;
+}
+
+.testimonials-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials-elm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+  background: white;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  flex: 1;
+  padding: 2rem;
+}
+
+.testimonials-elm-text {
+  padding: 0 2rem;
+}
+
+.testimonials-elm-profil img {
+  width: 50px;
+  border-radius: 50px;
+}
+
+.testimonials-elm-profil p {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+
+}
+
+.testimonials-elm-text p i {
+  margin: 0.2rem;
+}
+
+.contact {
+  padding: 10rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--secondary);
+}
+
+.contact-form {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-form input {
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  background: var(--secondary);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  outline: 0;
+}
+
+.contact h2 {
+  color: white;
+  margin-right: 19rem;
+  margin-bottom: 4rem;
+}
+
+.contact-form-button {
+  background: var(--primary);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 40px;
+  margin: 3rem auto;
+  display: block;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  font-size: 1.3rem;
+}
+
+.contact-form-button:hover {
+  background: var(--third);
+  color: white;
+}
+
+footer {
+  background: #444;
+  color: white;
+  padding: 5rem;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0;
+}
